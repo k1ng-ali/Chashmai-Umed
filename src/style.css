@@ -1,0 +1,49 @@
+html {
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  color: #2b2b2b;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+:root {
+  --fs-hero: clamp(2.5rem, 5vw, 4.5rem);
+  --fs-h1: clamp(2rem, 4vw, 3rem);
+  --fs-h2: clamp(1.6rem, 3vw, 2.2rem);
+  --fs-h3: clamp(1.3rem, 2vw, 1.6rem);
+  --fs-body: clamp(1rem, 1.2vw, 1.125rem);
+  --fs-small: 0.9rem;
+}
+
+:root {
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+}
+
+h1 { font-size: var(--fs-hero); }
+h2 { font-size: var(--fs-h1); }
+h3 { font-size: var(--fs-h2); }
+p  { font-size: var(--fs-body); line-height: 1.6; }
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
